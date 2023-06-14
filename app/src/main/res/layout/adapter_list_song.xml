@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/layout_song_perticular"
+    android:forceDarkAllowed="false"
+    android:background="@drawable/bg_button"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:forceDarkAllowed="false"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/txt_artist"
+        android:forceDarkAllowed="false"
+        android:layout_width="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+</LinearLayout>
