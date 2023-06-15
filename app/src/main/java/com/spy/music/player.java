@@ -24,13 +24,18 @@ public class player {
             mediaplayer = new MediaPlayer();
         }
         try {
+            Toast.makeText(context, "a", Toast.LENGTH_SHORT).show();
             mediaplayer.setDataSource(context, Uri.fromFile(new File(path)));
             mediaplayer.prepare();
+            Toast.makeText(context, "b", Toast.LENGTH_SHORT).show();
             mediaplayer.start();
+            Toast.makeText(context, "c", Toast.LENGTH_SHORT).show();
             MainActivity.updatecurrent(pos);
             MainActivity.updateTag("playing");
+            Toast.makeText(context, "d", Toast.LENGTH_SHORT).show();
         } catch (IOException e) {
             Log.d("error",e.getMessage());
+            Toast.makeText(context, e.getMessage()+"", Toast.LENGTH_SHORT).show();
         }
 
 
